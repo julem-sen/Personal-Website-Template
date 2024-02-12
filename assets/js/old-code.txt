@@ -1,0 +1,92 @@
+// const menuBtn = document.querySelector(".burger-btn");
+// const menu = document.querySelector(".j-mobile-menu");
+// const menuList = document.querySelector(".j-mobile-list");
+// const closeBtn = document.querySelector(".j-close");
+// const links = document.querySelectorAll(".j-mobile-link");
+// const profession = document.getElementById("professions");
+
+// menuBtn.addEventListener("click", toggleMenu);
+// closeBtn.addEventListener("click", toggleMenu);
+// /*videoCloseBtn.addEventListener("click", toggleClose);*/
+
+// let formStepNum = 0;
+// var txt = profession.dataset.professions.split(',');
+// var speed = 100;
+// var i = 0;
+// var inset = setInterval(typeWriter, speed);
+// var textSomething = 0;
+// document.addEventListener("load", typeWriter)
+// //LOADS DATA
+// function typeWriter(){
+//     if (i < txt.length) {
+//         profession.innerHTML = txt[i].substring(0, textSomething + 'I');
+
+//         console.log(txt[i].substring(0, i + 'I'));
+//         // console.log(txt[i].length);
+//       if(textSomething++ != txt[i].length)
+//         setTimeout(typeWriter,speed);
+//         i++;
+//     }
+// }
+
+// // closes menu if user clicks ouside the menu list
+// document.addEventListener("mouseup", (e) => {
+//     if (!menuList.contains(e.target)) {
+//         menu.classList.remove("collapsed");
+//     }
+//     e.preventDefault();
+// });
+
+// function toggleMenu(e) {
+//     if (!menu.classList.contains("collapsed")) {
+//         menu.classList.add("collapsed");
+//         disableScroll()
+//     } else {
+//         menu.classList.remove("collapsed");
+//         enableScroll()
+//     }
+
+//     e.preventDefault();
+// }
+
+// links.forEach((e) => {
+//     e.addEventListener("click", (ev) => {
+//         let goTo;
+//         menu.classList.remove("collapsed");
+//         enableScroll();
+//         if(ev.currentTarget.getAttribute("id") == "thisHero"){
+//             goTo = document.getElementById("Hero");
+//         }
+//         else if(ev.currentTarget.getAttribute("id") == "thisAbout"){
+//             goTo = document.getElementById("About");
+//         }
+//         else if(ev.currentTarget.getAttribute("id") == "thisResume"){
+//             goTo = document.getElementById("Resume");
+//         }
+//         else if(ev.currentTarget.getAttribute("id") == "thisPortfolio"){
+//             goTo = document.getElementById("Portfolio");
+//         }
+//         else if(ev.currentTarget.getAttribute("id") == "thisServices"){
+//             goTo = document.getElementById("Services");
+//         }
+//         else if(ev.currentTarget.getAttribute("id") == "thisContact"){
+//             goTo = document.getElementById("Contact");
+//         }
+//         goTo.scrollIntoView({behavior: 'smooth'}, true);
+//     });
+// });
+
+// function disableScroll() {
+//     // Get the current page scroll position
+//     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+//         // if any scroll is attempted, set this to the previous value
+//         window.onscroll = function() {
+//             window.scrollTo(scrollLeft, scrollTop);
+//         };
+// }
+
+// function enableScroll() {
+//     window.onscroll = function() {};
+// }
